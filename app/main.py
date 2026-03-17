@@ -4,7 +4,6 @@ from app.routes.chat_routes import router as chat_router
 from app.routes.website_routes import router as web_router
 from app.database import Base, engine
 
-# Create database tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
